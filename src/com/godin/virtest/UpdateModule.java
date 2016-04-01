@@ -14,7 +14,7 @@ public class UpdateModule extends UiAutomatorTestCase{
 	 * Checkpoint:判断“G虚拟手机”存在
 	 */
 	public void testOpenVersionPage(){
-		
+       
 	}
 	
 	/**
@@ -23,7 +23,7 @@ public class UpdateModule extends UiAutomatorTestCase{
 	 * Checkpoint:判断“更新电话拨出界面”存在
 	 */
 	public void testOpenFunctionIntroductionPage(){
-		
+     
 	}
 	
 	/**
