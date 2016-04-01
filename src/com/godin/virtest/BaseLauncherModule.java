@@ -11,7 +11,7 @@ public class BaseLauncherModule extends UiAutomatorTestCase{
 	/**
 	 * Id:1
 	 * Title:点击虚拟手机图标，进入虚拟手机
-	 * Checkpoint判断桌面上有虚拟手机内置app
+	 * Checkpoint:判断桌面上有虚拟手机内置app
 	 */
 	public void testStartVirtualPhone(){
        
