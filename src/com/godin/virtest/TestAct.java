@@ -3,7 +3,6 @@ package com.godin.virtest;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
-import junit.framework.Assert;
 
 public class TestAct extends UiAutomatorTestCase{
 	/*

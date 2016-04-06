@@ -1,5 +1,13 @@
 package com.godin.virtest;
 
+import junit.framework.Assert;
+import android.os.RemoteException;
+
+import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiScrollable;
+import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 /** 
@@ -8,22 +16,101 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 * @version 1.0 
 */
 public class BaseLauncherModule extends UiAutomatorTestCase{
+	public static void main(String[] args)
+	{
+		new My_UiAutomatorHelper("BaseLauncherModule","com.godin.virtest.BaseLauncherModule","testStartVirtualPhone","1");
+	}
 	/**
 	 * Id:1
 	 * Title:点击虚拟手机图标，进入虚拟手机
 	 * Checkpoint:判断桌面上有虚拟手机内置app
+	 * @throws RemoteException 
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testStartVirtualPhone(){
-       
+	public void testStartVirtualPhone() throws RemoteException, UiObjectNotFoundException{
+       UiDevice device=UiDevice.getInstance();
+       device.wakeUp();
+       device.pressHome();
+       UiObject obj=new UiObject(new UiSelector().resourceId("com.android.launcher3:id/hotseat"));
+       UiObject appbtn=obj.getChild(new UiSelector().className("android.widget.TextView").index(2));
+       appbtn.clickAndWaitForNewWindow();
+       UiScrollable collectionObject = new UiScrollable(new UiSelector().scrollable(true));
+      
+      
+if(collectionObject.exists()) {
+    	  // collectionObject.scrollForward();
+    	   collectionObject.setAsHorizontalList();
+    	   UiObject scrollableObject=new UiObject(new UiSelector().description("GLauncher"));
+    	   collectionObject.scrollIntoView(scrollableObject);
+    	   if(scrollableObject.exists())
+    	   {
+           scrollableObject.clickAndWaitForNewWindow();
+           UiScrollable Gscr=new UiScrollable(new UiSelector().scrollable(true));
+           if(Gscr.exists())
+           {
+        	   UiObject Wdjapp=new UiObject(new UiSelector().resourceId("com.godinsec.glauncher:id/item_image"));
+        	   Gscr.scrollIntoView(Wdjapp);
+        	   if(!Wdjapp.exists())
+        	   {
+        		Assert.fail();  
+        	   }
+           }
+           
+    	   }
+    	   System.out.println("ok");
+       } else {
+    	   Assert.fail();  
+    	   System.out.println("no");
+       }
+        
 	}
 	
 	/**
 	 * Id:2
 	 * Title:点击桌面应用图标，启动相应应用
 	 * Checkpoint:判断应用启动
+	 * @throws RemoteException 
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testOpenStartApp(){
-     
+	public void testOpenStartApp() throws RemoteException, UiObjectNotFoundException{
+		 UiDevice device=UiDevice.getInstance();
+	       device.wakeUp();
+	       device.pressHome();
+	       UiObject obj=new UiObject(new UiSelector().resourceId("com.android.launcher3:id/hotseat"));
+	       UiObject appbtn=obj.getChild(new UiSelector().className("android.widget.TextView").index(2));
+	       appbtn.clickAndWaitForNewWindow();
+	       UiScrollable collectionObject = new UiScrollable(new UiSelector().scrollable(true));
+	      
+	      
+	if(collectionObject.exists()) {
+	    	  // collectionObject.scrollForward();
+	    	   collectionObject.setAsHorizontalList();
+	    	   UiObject scrollableObject=new UiObject(new UiSelector().description("GLauncher"));
+	    	   collectionObject.scrollIntoView(scrollableObject);
+	    	   if(scrollableObject.exists())
+	    	   {
+	           scrollableObject.clickAndWaitForNewWindow();
+	           UiScrollable Gscr=new UiScrollable(new UiSelector().scrollable(true));
+	           if(Gscr.exists())
+	           {
+	        	   UiObject Wdjapp=new UiObject(new UiSelector().resourceId("com.godinsec.glauncher:id/item_image"));
+	        	   Gscr.scrollIntoView(Wdjapp);
+	        	   if(!Wdjapp.exists())
+	        	   {
+	        		Assert.fail();  
+	        	   }
+	        	   else
+	        	   {
+	        		   UiObject text=new UiObject(new UiSelector().text("分类"));
+	        	   }
+	           }
+	           
+	    	   }
+	    	   System.out.println("ok");
+	       } else {
+	    	   Assert.fail();  
+	    	   System.out.println("no");
+	       }
 	}
 	
 	/**
