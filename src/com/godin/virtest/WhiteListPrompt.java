@@ -8,9 +8,11 @@ public class WhiteListPrompt {
 	/**
 	 * Id:1
 	 * Title:安装VirtualPhone，点击图标，启动虚拟手机APP
-	 * Checkpoint:判断“虚拟一下”存在
+	 * Checkpoint:判断“马上开始”存在
 	 */
 	public void testWhiteListPromote(){
+		KillProcessModule.openGLauncher();
+		KillProcessModule.openSettings();
 		
 	}
 }
