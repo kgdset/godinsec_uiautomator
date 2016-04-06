@@ -57,7 +57,8 @@ public class ThirdPartyAppModule extends UiAutomatorTestCase{
 	        		   sleep(5000);
 	        		   UiObject text=new UiObject(new UiSelector().text("必备"));
 	        		  text.clickAndWaitForNewWindow();
-	        		  UiObject qqtext=new UiObject(new UiSelector().text("QQ"));
+	        		  UiObject install=new UiObject(new UiSelector().text("安装"));
+	        		  Assert.assertEquals(true, install.exists());
 	        		  
 	        		  
 	        	   }
