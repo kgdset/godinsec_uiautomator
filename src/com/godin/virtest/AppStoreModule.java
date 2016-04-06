@@ -1,32 +1,46 @@
 package com.godin.virtest;
+
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiSelector;
+
+import junit.framework.Assert;
+
 /** 
 * @author ypt
-* @date ´´½¨Ê±¼ä£º2016Äê4ÔÂ5ÈÕ ÏÂÎç5:08:31 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ5æ—¥ ä¸‹åˆ5:08:31 
 * @version 1.0   
 */
 public class AppStoreModule {
 	/**
 	 * Id:1
-	 * Title:µã»÷ÉÌµê£¬´ò¿ªÉÌµê
-	 * Checkpoint:ÅĞ¶Ï¡°°²×°¡±´æÔÚ
+	 * Title:ç‚¹å‡»å•†åº—ï¼Œæ‰“å¼€å•†åº—
+	 * Checkpoint:åˆ¤æ–­â€œå®‰è£…â€å­˜åœ¨
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testOpenAppStore(){
-		
+	public void testOpenAppStore() throws UiObjectNotFoundException{
+		KillProcessModule.openGLauncher();
+		new UiObject(new UiSelector().text("è±Œè±†èš")).clickAndWaitForNewWindow();
+		UiObject install=new UiObject(new UiSelector().text("å®‰è£…"));
+		Assert.assertEquals(true, install.exists());
 	}
 	
 	/**
 	 * Id:2
-	 * Title:Ñ¡ÔñÓ¦ÓÃA£¬µã»÷°²×°
-	 * Checkpoint:ÅĞ¶Ï¡°´ò¿ª¡±´æÔÚ
+	 * Title:é€‰æ‹©åº”ç”¨Aï¼Œç‚¹å‡»å®‰è£…
+	 * Checkpoint:åˆ¤æ–­â€œæ‰“å¼€â€å­˜åœ¨
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testInstallApp(){
-		
+	public void testInstallApp() throws UiObjectNotFoundException{
+		new UiObject(new UiSelector().text("å®‰è£…")).click();
+		UiObject openApp=new UiObject(new UiSelector().text("æ‰“å¼€"));
+		Assert.assertEquals(true, openApp.exists());
 	}
 	
 	/**
 	 * Id:3
-	 * Title:Ñ¡ÔñÓ¦ÓÃA£¬µã»÷´ò¿ª
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃAÆô¶¯
+	 * Title:é€‰æ‹©åº”ç”¨Aï¼Œç‚¹å‡»æ‰“å¼€
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨Aå¯åŠ¨
 	 */
 	public void testAppInstalledSuccessfully(){
 		

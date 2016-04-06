@@ -1,16 +1,17 @@
 package com.godin.virtest;
 /** 
 * @author ypt
-* @date ´´½¨Ê±¼ä£º2016Äê4ÔÂ5ÈÕ ÏÂÎç5:03:10 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ5æ—¥ ä¸‹åˆ5:03:10 
 * @version 1.0  
 */
 public class WhiteListPrompt {
 	/**
 	 * Id:1
-	 * Title:°²×°VirtualPhone£¬µã»÷Í¼±ê£¬Æô¶¯ĞéÄâÊÖ»úAPP
-	 * Checkpoint:ÅĞ¶Ï¡°ĞéÄâÒ»ÏÂ¡±´æÔÚ
+	 * Title:å®‰è£…VirtualPhoneï¼Œç‚¹å‡»å›¾æ ‡ï¼Œå¯åŠ¨è™šæ‹Ÿæ‰‹æœºAPP
+	 * Checkpoint:åˆ¤æ–­â€œè™šæ‹Ÿä¸€ä¸‹â€å­˜åœ¨
 	 */
 	public void testWhiteListPromote(){
 		
 	}
 }
+

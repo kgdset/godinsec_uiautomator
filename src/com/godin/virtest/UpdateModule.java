@@ -4,14 +4,14 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 /** 
 * @author ypt
-* @date ´´½¨Ê±¼ä£º2016Äê3ÔÂ31ÈÕ ÏÂÎç1:36:13 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´3æœˆ31æ—¥ ä¸‹åˆ1:36:13 
 * @version 1.0 
 */
 public class UpdateModule extends UiAutomatorTestCase{
 	/**
 	 * Id:1
-	 * Title:µã»÷°æ±¾¸üĞÂ£¬´ò¿ª°æ±¾Ò³Ãæ
-	 * Checkpoint:ÅĞ¶Ï¡°GĞéÄâÊÖ»ú¡±´æÔÚ
+	 * Title:ç‚¹å‡»ç‰ˆæœ¬æ›´æ–°ï¼Œæ‰“å¼€ç‰ˆæœ¬é¡µé¢
+	 * Checkpoint:åˆ¤æ–­â€œGè™šæ‹Ÿæ‰‹æœºâ€å­˜åœ¨
 	 */
 	public void testOpenVersionPage(){
        
@@ -19,8 +19,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:2
-	 * Title:µã»÷¹¦ÄÜ½éÉÜ£¬´ò¿ª¹¦ÄÜ½éÉÜÒ³Ãæ
-	 * Checkpoint:ÅĞ¶Ï¡°¸üĞÂµç»°²¦³ö½çÃæ¡±´æÔÚ
+	 * Title:ç‚¹å‡»åŠŸèƒ½ä»‹ç»ï¼Œæ‰“å¼€åŠŸèƒ½ä»‹ç»é¡µé¢
+	 * Checkpoint:åˆ¤æ–­â€œæ›´æ–°ç”µè¯æ‹¨å‡ºç•Œé¢â€å­˜åœ¨
 	 */
 	public void testOpenFunctionIntroductionPage(){
      
@@ -28,8 +28,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:3
-	 * Title:µã»÷·şÎñÌõ¿î£¬´ò¿ª·şÎñÌõ¿îÒ³Ãæ
-	 * Checkpoint:ÅĞ¶Ï¡°¡±´æÔÚ
+	 * Title:ç‚¹å‡»æœåŠ¡æ¡æ¬¾ï¼Œæ‰“å¼€æœåŠ¡æ¡æ¬¾é¡µé¢
+	 * Checkpoint:åˆ¤æ–­â€œâ€å­˜åœ¨
 	 */
 	public void testServiceTerms(){
 		
@@ -37,8 +37,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:4
-	 * Title:µã»÷ĞÂ°æ±¾£¬´ò¿ªĞÂ°æ±¾Ò³Ãæ
-	 * Checkpoint:ÅĞ¶Ï¡°Á¢¼´¸üĞÂ¡±´æÔÚ
+	 * Title:ç‚¹å‡»æ–°ç‰ˆæœ¬ï¼Œæ‰“å¼€æ–°ç‰ˆæœ¬é¡µé¢
+	 * Checkpoint:åˆ¤æ–­â€œç«‹å³æ›´æ–°â€å­˜åœ¨
 	 */
 	public void testOpenNewVersionPage(){
 		
@@ -46,8 +46,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:5
-	 * Title:ĞÂ°æ±¾Ò³Ãæ£¬µã»÷Á¢¼´¸üĞÂ£¬´ò¿ªÏÂÔØ¸üĞÂ
-	 * Checkpoint:ÅĞ¶Ï¡°ÏÂÔØÖĞ¡±´æÔÚ
+	 * Title:æ–°ç‰ˆæœ¬é¡µé¢ï¼Œç‚¹å‡»ç«‹å³æ›´æ–°ï¼Œæ‰“å¼€ä¸‹è½½æ›´æ–°
+	 * Checkpoint:åˆ¤æ–­â€œä¸‹è½½ä¸­â€å­˜åœ¨
 	 */
 	public void testUpdateImmediatelyBtn(){
 		
@@ -55,8 +55,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:6
-	 * Title:µã»÷ÏÂÔØÍê³É£¬¿ªÊ¼°²×°
-	 * Checkpoint:ÅĞ¶Ï¡°°²×°¡±´æÔÚ
+	 * Title:ç‚¹å‡»ä¸‹è½½å®Œæˆï¼Œå¼€å§‹å®‰è£…
+	 * Checkpoint:åˆ¤æ–­â€œå®‰è£…â€å­˜åœ¨
 	 */
 	public void testStartInstallation(){
 		
@@ -64,8 +64,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:7
-	 * Title:µã»÷°²×°£¬ÕıÔÚ°²×°
-	 * Checkpoint:ÅĞ¶Ï¡°ÕıÔÚ°²×°¡±´æÔÚ
+	 * Title:ç‚¹å‡»å®‰è£…ï¼Œæ­£åœ¨å®‰è£…
+	 * Checkpoint:åˆ¤æ–­â€œæ­£åœ¨å®‰è£…â€å­˜åœ¨
 	 */
 	public void testInstalling(){
 		
@@ -73,8 +73,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:8
-	 * Title:µÈ´ı°²×°Íê³É
-	 * Checkpoint:ÅĞ¶Ï¡°Íê³É¡±´æÔÚ
+	 * Title:ç­‰å¾…å®‰è£…å®Œæˆ
+	 * Checkpoint:åˆ¤æ–­â€œå®Œæˆâ€å­˜åœ¨
 	 */
 	public void testInstallCompleted(){
 		
@@ -82,8 +82,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:9
-	 * Title:¸üĞÂÍê£¬²é¿´°æ±¾ºÅ
-	 * Checkpoint:ÅĞ¶Ï¡°V1.02¡±´æÔÚ
+	 * Title:æ›´æ–°å®Œï¼ŒæŸ¥çœ‹ç‰ˆæœ¬å·
+	 * Checkpoint:åˆ¤æ–­â€œV1.02â€å­˜åœ¨
 	 */
 	public void testNewVersionNumber(){
 		
@@ -91,8 +91,8 @@ public class UpdateModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:10
-	 * Title:´ò¿ªÉèÖÃ£¬²é¿´ÓĞÃ»ÓĞĞÂ°æ±¾£¬´ò¿ª°æ±¾Ò³Ãæ²é¿´ÓĞÃ»ÓĞĞÂ°æ±¾
-	 * Checkpoint:ÅĞ¶Ï¡°new¡±ÒªÃ´¶¼´æÔÚ£¬ÒªÃ´¶¼²»´æÔÚ
+	 * Title:æ‰“å¼€è®¾ç½®ï¼ŒæŸ¥çœ‹æœ‰æ²¡æœ‰æ–°ç‰ˆæœ¬ï¼Œæ‰“å¼€ç‰ˆæœ¬é¡µé¢æŸ¥çœ‹æœ‰æ²¡æœ‰æ–°ç‰ˆæœ¬
+	 * Checkpoint:åˆ¤æ–­â€œnewâ€è¦ä¹ˆéƒ½å­˜åœ¨ï¼Œè¦ä¹ˆéƒ½ä¸å­˜åœ¨
 	 */
 	public void testIfHaveNewUpdate(){
 		

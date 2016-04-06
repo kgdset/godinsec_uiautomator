@@ -1,23 +1,35 @@
 package com.godin.virtest;
+
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiSelector;
+
+import junit.framework.Assert;
+
 /** 
 * @author ypt
-* @date ´´½¨Ê±¼ä£º2016Äê4ÔÂ1ÈÕ ÏÂÎç5:19:33 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ1æ—¥ ä¸‹åˆ5:19:33 
 * @version 1.0 
 */
 public class KillProcessModule {
 	/**
 	 * Id:1
-	 * Title:µã»÷Ó¦ÓÃ¹ÜÀí£¬´ò¿ªÓ¦ÓÃ¹ÜÀíÒ³Ãæ
-	 * Checkpoint:ÅĞ¶Ï¡°É±ËÀ½ø³Ì¡±´æÔÚ
+	 * Title:ç‚¹å‡»åº”ç”¨ç®¡ç†ï¼Œæ‰“å¼€åº”ç”¨ç®¡ç†é¡µé¢
+	 * Checkpoint:åˆ¤æ–­â€œæ€æ­»è¿›ç¨‹â€å­˜åœ¨
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testOpenAppManager(){
-		
+	public void testOpenAppManager() throws UiObjectNotFoundException{
+		openGLauncher();
+		openSettings();
+		new UiObject(new UiSelector().text("åº”ç”¨ç®¡ç†")).clickAndWaitForNewWindow();
+		UiObject killProcess=new UiObject(new UiSelector().resourceIdMatches("com.godinsec.glauncher:id/settings_app_manage_item_kill"));
+		Assert.assertEquals(true, killProcess.exists());	
 	}
 	
 	/**
 	 * Id:2
-	 * Title:µã»÷É±ËÀÓ¦ÓÃÒ»½ø³Ì
-	 * Checkpoint:ÅĞ¶Ï¡°Ó¦ÓÃÒ»¡±²»´æÔÚ
+	 * Title:ç‚¹å‡»æ€æ­»åº”ç”¨ä¸€è¿›ç¨‹
+	 * Checkpoint:åˆ¤æ–­â€œåº”ç”¨ä¸€â€ä¸å­˜åœ¨
 	 */
 	public void testKillOneProcess(){
 		
@@ -25,8 +37,8 @@ public class KillProcessModule {
 	
 	/**
 	 * Id:3
-	 * Title:µã»÷É±ËÀ2¸ö½ø³Ì
-	 * Checkpoint:ÅĞ¶Ï¡°É±ËÀ½ø³Ì¡±°´Å¥¼õÉÙÁË2¸ö
+	 * Title:ç‚¹å‡»æ€æ­»2ä¸ªè¿›ç¨‹
+	 * Checkpoint:åˆ¤æ–­â€œæ€æ­»è¿›ç¨‹â€æŒ‰é’®å‡å°‘äº†2ä¸ª
 	 */
 	public void testKillTwoProcess(){
 		
@@ -34,8 +46,8 @@ public class KillProcessModule {
 	
 	/**
 	 * Id:4
-	 * Title:µã»÷É±ËÀËùÓĞ½ø³Ì
-	 * Checkpoint:ÅĞ¶Ï¡°É±ËÀ½ø³Ì¡±°´Å¥²»´æÔÚ
+	 * Title:ç‚¹å‡»æ€æ­»æ‰€æœ‰è¿›ç¨‹
+	 * Checkpoint:åˆ¤æ–­â€œæ€æ­»è¿›ç¨‹â€æŒ‰é’®ä¸å­˜åœ¨
 	 */
 	public void testKillAllProcess(){
 		
@@ -43,10 +55,35 @@ public class KillProcessModule {
 	
 	/**
 	 * Id:5
-	 * Title:Ó¦ÓÃ¹ÜÀíÒ³Ãæ£¬µã»÷·µ»Ø
-	 * Checkpoint:ÅĞ¶Ï¡°ÉèÖÃ¡±´æÔÚ
+	 * Title:åº”ç”¨ç®¡ç†é¡µé¢ï¼Œç‚¹å‡»è¿”å›
+	 * Checkpoint:åˆ¤æ–­â€œè®¾ç½®â€å­˜åœ¨
 	 */
 	public void testExitAppManager(){
+		
+	}
+	
+	/**
+	 * æ‰“å¼€GLauncher
+	 */
+	public static void openGLauncher(){
+		UiObject gLauncher=new UiObject(new UiSelector().text("GLauncher"));
+		try {
+			gLauncher.clickAndWaitForNewWindow();
+		} catch (UiObjectNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * æ‰“å¼€è®¾ç½®
+	 */
+	public static void openSettings(){
+		UiObject settings=new UiObject(new UiSelector().text("è®¾ç½®"));
+		try {
+			settings.clickAndWaitForNewWindow();
+		} catch (UiObjectNotFoundException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
