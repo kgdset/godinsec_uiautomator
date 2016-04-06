@@ -1,26 +1,81 @@
 package com.godin.virtest;
 
+import junit.framework.Assert;
+
+import android.os.RemoteException;
+
+import com.android.uiautomator.core.UiDevice;
+import com.android.uiautomator.core.UiObject;
+import com.android.uiautomator.core.UiObjectNotFoundException;
+import com.android.uiautomator.core.UiScrollable;
+import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 /** 
 * @author wubin
-* @date ´´½¨Ê±¼ä£º2016Äê4ÔÂ01ÈÕ ÏÂÎç5:46:13 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ01æ—¥ ä¸‹åˆ5:46:13 
 * @version 1.0 
 */
 public class ThirdPartyAppModule extends UiAutomatorTestCase{
 	/**
 	 * Id:1
-	 * Title:µã»÷½øÈëÓ¦ÓÃÉÌµê£¬°²×°µÚÈı·½Ó¦ÓÃ
-	 * Checkpoint:ÅĞ¶Ï×ÀÃæÓĞ°²×°µÄµÚÈı·½Ó¦ÓÃ
+	 * Title:ç‚¹å‡»è¿›å…¥åº”ç”¨å•†åº—ï¼Œå®‰è£…ç¬¬ä¸‰æ–¹åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­æ¡Œé¢æœ‰å®‰è£…çš„ç¬¬ä¸‰æ–¹åº”ç”¨
+	 * @throws RemoteException 
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testInstallApp(){
-       
+	public void testInstallApp() throws RemoteException, UiObjectNotFoundException{
+		UiDevice device=UiDevice.getInstance();
+	       device.wakeUp();
+	       device.pressHome();
+	       UiObject obj=new UiObject(new UiSelector().resourceId("com.android.launcher3:id/hotseat"));
+	       UiObject appbtn=obj.getChild(new UiSelector().className("android.widget.TextView").index(2));
+	       appbtn.clickAndWaitForNewWindow();
+	       UiScrollable collectionObject = new UiScrollable(new UiSelector().scrollable(true));
+	      
+	      
+	if(collectionObject.exists()) {
+	    	  // collectionObject.scrollForward();
+	    	   collectionObject.setAsHorizontalList();
+	    	   UiObject scrollableObject=new UiObject(new UiSelector().description("GLauncher"));
+	    	   collectionObject.scrollIntoView(scrollableObject);
+	    	   if(scrollableObject.exists())
+	    	   {
+	           scrollableObject.clickAndWaitForNewWindow();
+	           UiScrollable Gscr=new UiScrollable(new UiSelector().scrollable(true));
+	           if(Gscr.exists())
+	           {
+	        	   UiObject Wdjapp=new UiObject(new UiSelector().text("è±Œè±†èš"));
+	        	   Gscr.scrollIntoView(Wdjapp);
+	        	   if(!Wdjapp.exists())
+	        	   {
+	        		Assert.fail();  
+	        	   }
+	        	   else
+	        	   {
+	        		   Wdjapp.clickAndWaitForNewWindow();
+	        		   sleep(5000);
+	        		   UiObject text=new UiObject(new UiSelector().text("å¿…å¤‡"));
+	        		  text.clickAndWaitForNewWindow();
+	        		  UiObject qqtext=new UiObject(new UiSelector().text("QQ"));
+	        		  
+	        		  
+	        	   }
+	           }
+	           
+	    	   }
+	    	   System.out.println("ok");
+	       } else {
+	    	   Assert.fail();  
+	    	   System.out.println("no");
+	       }
+
 	}
 	
 	/**
 	 * Id:2
-	 * Title:µã»÷×ÀÃæµÚÈıÓ¦ÓÃÍ¼±ê£¬Æô¶¯ÏàÓ¦Ó¦ÓÃ
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÆô¶¯
+	 * Title:ç‚¹å‡»æ¡Œé¢ç¬¬ä¸‰åº”ç”¨å›¾æ ‡ï¼Œå¯åŠ¨ç›¸åº”åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨å¯åŠ¨
 	 */
 	public void testOpenStartThirdPartyApp(){
      
@@ -28,8 +83,8 @@ public class ThirdPartyAppModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:3
-	 * Title:³¤°´×ÀÃæÍ¼±ê£¬ÍÏ¶¯µ½É¾³ıÇøÓò£¬¿ÉÒÔÉ¾³ıÓ¦ÓÃ
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÍ¼±êÔÚ×ÀÃæÉÏ²»´æÔÚ
+	 * Title:é•¿æŒ‰æ¡Œé¢å›¾æ ‡ï¼Œæ‹–åŠ¨åˆ°åˆ é™¤åŒºåŸŸï¼Œå¯ä»¥åˆ é™¤åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨å›¾æ ‡åœ¨æ¡Œé¢ä¸Šä¸å­˜åœ¨
 	 */
 	public void testDellThirdPartyApp(){
 		

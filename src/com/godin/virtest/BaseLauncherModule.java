@@ -12,18 +12,18 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 /** 
 * @author wubin
-* @date ´´½¨Ê±¼ä£º2016Äê4ÔÂ01ÈÕ ÏÂÎç5:16:13 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ01æ—¥ ä¸‹åˆ5:16:13 
 * @version 1.0 
 */
 public class BaseLauncherModule extends UiAutomatorTestCase{
 	public static void main(String[] args)
 	{
-		new My_UiAutomatorHelper("BaseLauncherModule","com.godin.virtest.BaseLauncherModule","testStartVirtualPhone","1");
+		new My_UiAutomatorHelper("BaseLauncherModule","com.godin.virtest.BaseLauncherModule","testOpenStartApp","1");
 	}
 	/**
 	 * Id:1
-	 * Title:µã»÷ĞéÄâÊÖ»úÍ¼±ê£¬½øÈëĞéÄâÊÖ»ú
-	 * Checkpoint:ÅĞ¶Ï×ÀÃæÉÏÓĞĞéÄâÊÖ»úÄÚÖÃapp
+	 * Title:ç‚¹å‡»è™šæ‹Ÿæ‰‹æœºå›¾æ ‡ï¼Œè¿›å…¥è™šæ‹Ÿæ‰‹æœº
+	 * Checkpoint:åˆ¤æ–­æ¡Œé¢ä¸Šæœ‰è™šæ‹Ÿæ‰‹æœºå†…ç½®app
 	 * @throws RemoteException 
 	 * @throws UiObjectNotFoundException 
 	 */
@@ -48,7 +48,7 @@ if(collectionObject.exists()) {
            UiScrollable Gscr=new UiScrollable(new UiSelector().scrollable(true));
            if(Gscr.exists())
            {
-        	   UiObject Wdjapp=new UiObject(new UiSelector().resourceId("com.godinsec.glauncher:id/item_image"));
+        	   UiObject Wdjapp=new UiObject(new UiSelector().text("è±Œè±†èš"));
         	   Gscr.scrollIntoView(Wdjapp);
         	   if(!Wdjapp.exists())
         	   {
@@ -67,8 +67,8 @@ if(collectionObject.exists()) {
 	
 	/**
 	 * Id:2
-	 * Title:µã»÷×ÀÃæÓ¦ÓÃÍ¼±ê£¬Æô¶¯ÏàÓ¦Ó¦ÓÃ
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÆô¶¯
+	 * Title:ç‚¹å‡»æ¡Œé¢åº”ç”¨å›¾æ ‡ï¼Œå¯åŠ¨ç›¸åº”åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨å¯åŠ¨
 	 * @throws RemoteException 
 	 * @throws UiObjectNotFoundException 
 	 */
@@ -93,7 +93,7 @@ if(collectionObject.exists()) {
 	           UiScrollable Gscr=new UiScrollable(new UiSelector().scrollable(true));
 	           if(Gscr.exists())
 	           {
-	        	   UiObject Wdjapp=new UiObject(new UiSelector().resourceId("com.godinsec.glauncher:id/item_image"));
+	        	   UiObject Wdjapp=new UiObject(new UiSelector().text("è±Œè±†èš"));
 	        	   Gscr.scrollIntoView(Wdjapp);
 	        	   if(!Wdjapp.exists())
 	        	   {
@@ -101,7 +101,13 @@ if(collectionObject.exists()) {
 	        	   }
 	        	   else
 	        	   {
-	        		   UiObject text=new UiObject(new UiSelector().text("·ÖÀà"));
+	        		   Wdjapp.clickAndWaitForNewWindow();
+	        		   sleep(5000);
+	        		   UiObject text=new UiObject(new UiSelector().text("åˆ†ç±»"));
+	        		   if(!text.exists())
+	        		   {
+	        			   Assert.fail();
+	        		   }
 	        	   }
 	           }
 	           
@@ -115,8 +121,8 @@ if(collectionObject.exists()) {
 	
 	/**
 	 * Id:3
-	 * Title:³¤°´×ÀÃæÓ¦ÓÃÍ¼±ê£¬½øĞĞÍÏ¶¯
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÍ¼±ê±»³É¹¦ÍÏ¶¯µ½ÆäËüÎ»ÖÃ
+	 * Title:é•¿æŒ‰æ¡Œé¢åº”ç”¨å›¾æ ‡ï¼Œè¿›è¡Œæ‹–åŠ¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨å›¾æ ‡è¢«æˆåŠŸæ‹–åŠ¨åˆ°å…¶å®ƒä½ç½®
 	 */
 	public void testDragAppIcon(){
 		
@@ -124,8 +130,8 @@ if(collectionObject.exists()) {
 	
 	/**
 	 * Id:4
-	 * Title:³¤°´×ÀÃæÓ¦ÓÃÍ¼±ê£¬ÍÏ¶¯µ½ÁíÒ»¸öÓ¦ÓÃÍ¼±êÉÏ£¬¿ÉÒÔºÏ²¢³ÉÎÄ¼ş¼Ğ
-	 * Checkpoint:ÅĞ¶ÏÎÄ¼ş¼ĞºÏ²¢³É¹¦
+	 * Title:é•¿æŒ‰æ¡Œé¢åº”ç”¨å›¾æ ‡ï¼Œæ‹–åŠ¨åˆ°å¦ä¸€ä¸ªåº”ç”¨å›¾æ ‡ä¸Šï¼Œå¯ä»¥åˆå¹¶æˆæ–‡ä»¶å¤¹
+	 * Checkpoint:åˆ¤æ–­æ–‡ä»¶å¤¹åˆå¹¶æˆåŠŸ
 	 */
 	public void testDragMergeFolder(){
 		
@@ -133,8 +139,8 @@ if(collectionObject.exists()) {
 	
 	/**
 	 * Id:5
-	 * Title:³¤°´×ÀÃæÍ¼±ê£¬ÍÏ¶¯µ½É¾³ıÇøÓò£¬¿ÉÒÔÉ¾³ıÓ¦ÓÃ
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÍ¼±êÔÚ×ÀÃæÉÏ²»´æÔÚ
+	 * Title:é•¿æŒ‰æ¡Œé¢å›¾æ ‡ï¼Œæ‹–åŠ¨åˆ°åˆ é™¤åŒºåŸŸï¼Œå¯ä»¥åˆ é™¤åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨å›¾æ ‡åœ¨æ¡Œé¢ä¸Šä¸å­˜åœ¨
 	 */
 	public void testDellApp(){
 		
@@ -142,8 +148,8 @@ if(collectionObject.exists()) {
 	
 	/**
 	 * Id:6
-	 * Title:µã»÷ÏÂÔØÍê³É£¬¿ªÊ¼°²×°
-	 * Checkpoint:ÅĞ¶Ï¡°°²×°¡±´æÔÚ
+	 * Title:ç‚¹å‡»ä¸‹è½½å®Œæˆï¼Œå¼€å§‹å®‰è£…
+	 * Checkpoint:åˆ¤æ–­â€œå®‰è£…â€å­˜åœ¨
 	 */
 	public void testStartInstallation(){
 		
