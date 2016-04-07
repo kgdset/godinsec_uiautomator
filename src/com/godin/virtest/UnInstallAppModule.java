@@ -4,14 +4,14 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 /** 
 * @author wubin
-* @date ´´½¨Ê±¼ä£º2016Äê4ÔÂ01ÈÕ ÏÂÎç5:46:13 
+* @date åˆ›å»ºæ—¶é—´ï¼š2016å¹´4æœˆ01æ—¥ ä¸‹åˆ5:46:13 
 * @version 1.0 
 */
 public class UnInstallAppModule extends UiAutomatorTestCase{
 	/**
 	 * Id:1
-	 * Title:³¤°´×ÀÃæµÚÈı·½Ó¦ÓÃÍ¼±ê£¬ÍÏ¶¯µ½É¾³ıÇøÓò£¬¿ÉÒÔĞ¶ÔØÓ¦ÓÃ
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÔÚ×ÀÃæ²»´æÔÚ£¬ÅĞ¶ÏÓ¦ÓÃÔÚÓ¦ÓÃ¹ÜÀíÖĞ²»´æÔÚ
+	 * Title:é•¿æŒ‰æ¡Œé¢ç¬¬ä¸‰æ–¹åº”ç”¨å›¾æ ‡ï¼Œæ‹–åŠ¨åˆ°åˆ é™¤åŒºåŸŸï¼Œå¯ä»¥å¸è½½åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨åœ¨æ¡Œé¢ä¸å­˜åœ¨ï¼Œåˆ¤æ–­åº”ç”¨åœ¨åº”ç”¨ç®¡ç†ä¸­ä¸å­˜åœ¨
 	 */
 	public void testInstallApp(){
        
@@ -19,8 +19,8 @@ public class UnInstallAppModule extends UiAutomatorTestCase{
 	
 	/**
 	 * Id:2
-	 * Title:ÔÚÓ¦ÓÃ¹ÜÀíÖĞ£¬Ğ¶ÔØµÚÈı·½Ó¦ÓÃ
-	 * Checkpoint:ÅĞ¶ÏÓ¦ÓÃÔÚ×ÀÃæ²»´æÔÚ£¬ÅĞ¶ÏÓ¦ÓÃÔÚÓ¦ÓÃ¹ÜÀíÖĞ²»´æÔÚ
+	 * Title:åœ¨åº”ç”¨ç®¡ç†ä¸­ï¼Œå¸è½½ç¬¬ä¸‰æ–¹åº”ç”¨
+	 * Checkpoint:åˆ¤æ–­åº”ç”¨åœ¨æ¡Œé¢ä¸å­˜åœ¨ï¼Œåˆ¤æ–­åº”ç”¨åœ¨åº”ç”¨ç®¡ç†ä¸­ä¸å­˜åœ¨
 	 */
 	public void testOpenStartThirdPartyApp(){
      

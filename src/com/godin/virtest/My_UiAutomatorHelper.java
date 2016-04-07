@@ -16,14 +16,14 @@ import android.util.Log;
 
 public class My_UiAutomatorHelper {
 
-	// ÒÔÏÂ²ÎÊıĞèÒªÅäÖÃ£¬ÓÃÀı¼¯id£¬ÓÃÀıid£¬°²×¿id
+	// ä»¥ä¸‹å‚æ•°éœ€è¦é…ç½®ï¼Œç”¨ä¾‹é›†idï¼Œç”¨ä¾‹idï¼Œå®‰å“id
 	private static String android_id = "1";
 	private static String jar_name = "";
 	private static String test_class = "";
 	private static String test_name = "";
 	private static String android_path="/Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk/tools/";
 	private static String adb_path="/Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/";
-	// ¹¤×÷¿Õ¼ä²»ĞèÒªÅäÖÃ£¬×Ô¶¯»ñÈ¡¹¤×÷¿Õ¼äÄ¿Â¼
+	// å·¥ä½œç©ºé—´ä¸éœ€è¦é…ç½®ï¼Œè‡ªåŠ¨è·å–å·¥ä½œç©ºé—´ç›®å½•
 	private static String workspace_path;
 
     public static void main(String[] args) {
@@ -31,11 +31,11 @@ public class My_UiAutomatorHelper {
 	}
 	public My_UiAutomatorHelper() {
 		workspace_path = getWorkSpase();
-		System.out.println("---¹¤×÷¿Õ¼ä£º\t\n" + getWorkSpase());
+		System.out.println("---å·¥ä½œç©ºé—´ï¼š\t\n" + getWorkSpase());
 	}
 
 	/**
-	 * ĞèÇó£ºUI¹¤³Ìµ÷ÊÔ¹¹ÔìÆ÷£¬ÊäÈëjar°üÃû£¬°üÃû£¬ÀàÃû£¬ÓÃÀıÃû
+	 * éœ€æ±‚ï¼šUIå·¥ç¨‹è°ƒè¯•æ„é€ å™¨ï¼Œè¾“å…¥jaråŒ…åï¼ŒåŒ…åï¼Œç±»åï¼Œç”¨ä¾‹å
 	 * @param jarName
 	 * @param testClass
 	 * @param testName
@@ -45,7 +45,7 @@ public class My_UiAutomatorHelper {
 			String androidId) {
 		System.out.println("-----------start--uiautomator--debug-------------");
 		workspace_path = getWorkSpase();
-		System.out.println("----¹¤×÷¿Õ¼ä£º\t\n" + getWorkSpase());
+		System.out.println("----å·¥ä½œç©ºé—´ï¼š\t\n" + getWorkSpase());
 
 		jar_name = jarName;
 		test_class = testClass;
@@ -56,7 +56,7 @@ public class My_UiAutomatorHelper {
 		System.out.println("---FINISH DEBUG----");
 		System.out.println("*******************");
 	}		
-	// ÔËĞĞ²½Öè
+	// è¿è¡Œæ­¥éª¤
 	private void runUiautomator() {
 		creatBuildXml();
 		modfileBuild();
@@ -76,30 +76,30 @@ public class My_UiAutomatorHelper {
 	}		
 
 
-	// 1--ÅĞ¶ÏÊÇ·ñÓĞbuild
+	// 1--åˆ¤æ–­æ˜¯å¦æœ‰build
 	public boolean isBuild() {
 		File buildFile = new File("build.xml");
 		if (buildFile.exists()) {
 			return true;
 		}
-		// ´´½¨build.xml
+		// åˆ›å»ºbuild.xml
 		execCmd(android_path+"android create uitest-project -n " + jar_name + " -t "
 				+ android_id + " -p " + workspace_path);
 		return false;
 	}
 
-	// ´´½¨build.xml
+	// åˆ›å»ºbuild.xml
 	public void creatBuildXml() {
 		execCmd(android_path+"android create uitest-project -n " + jar_name + " -t "
 				+ android_id + " -p " + workspace_path);
 	}
 
-	// 2---ĞŞ¸Äbuild
+	// 2---ä¿®æ”¹build
 	public void modfileBuild() {
 		StringBuffer stringBuffer = new StringBuffer();
 		try {
 			File file = new File("build.xml");
-			if (file.isFile() && file.exists()) { // ÅĞ¶ÏÎÄ¼şÊÇ·ñ´æÔÚ
+			if (file.isFile() && file.exists()) { // åˆ¤æ–­æ–‡ä»¶æ˜¯å¦å­˜åœ¨
 				InputStreamReader read = new InputStreamReader(
 						new FileInputStream(file));
 				BufferedReader bufferedReader = new BufferedReader(read);
@@ -107,29 +107,29 @@ public class My_UiAutomatorHelper {
 				while ((lineTxt = bufferedReader.readLine()) != null) {
 					if (lineTxt.matches(".*help.*")) {
 						lineTxt = lineTxt.replaceAll("help", "build");
-						// System.out.println("ĞŞ¸Äºó£º " + lineTxt);
+						// System.out.println("ä¿®æ”¹åï¼š " + lineTxt);
 					}
 					stringBuffer = stringBuffer.append(lineTxt + "\t\n");
 				}
 				read.close();
 			} else {
-				System.out.println("ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş");
+				System.out.println("æ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶");
 			}
 		} catch (Exception e) {
-			System.out.println("¶ÁÈ¡ÎÄ¼şÄÚÈİ³ö´í");
+			System.out.println("è¯»å–æ–‡ä»¶å†…å®¹å‡ºé”™");
 			e.printStackTrace();
 		}
 
 		System.out.println("-----------------------");
 
-		// ĞŞ¸ÄºóĞ´»ØÈ¥
+		// ä¿®æ”¹åå†™å›å»
 		writerText("build.xml", new String(stringBuffer));
-		System.out.println("--------ĞŞ¸ÄbuildÍê³É---------");
+		System.out.println("--------ä¿®æ”¹buildå®Œæˆ---------");
 	}
 
 	
 
-	// 3---ant Ö´ĞĞbuild
+	// 3---ant æ‰§è¡Œbuild
 	public void buildWithAnt() {
 		if (System.getProperty("os.name").equals("Linux")||System.getProperty("os.name").equals("Mac OS X")) {
 			execCmd("/usr/local/Cellar/ant/1.9.6/bin/ant");
@@ -141,13 +141,13 @@ public class My_UiAutomatorHelper {
 	// 4---push jar
 	public void pushTestJar(String localPath) {
 		//localPath="\""+localPath+"\"";
-		System.out.println("----jar°üÂ·¾¶£º "+localPath);
+		System.out.println("----jaråŒ…è·¯å¾„ï¼š "+localPath);
 		String pushCmd = adb_path+"adb push " + localPath + " /data/local/tmp/";
 		System.out.println("----" + pushCmd);
 		execCmd(pushCmd);
 	}
 
-	// 5---ÔËĞĞ²âÊÔ
+	// 5---è¿è¡Œæµ‹è¯•
 	public void runTest(String jarName, String testName) {
 		String runCmd = adb_path+"adb shell uiautomator runtest ";
 		String testCmd = jarName + ".jar " + "--nohup -c " + testName;
@@ -162,14 +162,14 @@ public class My_UiAutomatorHelper {
 	}
 	
 	/**
-	 * ĞèÇó£ºÖ´ĞĞcmdÃüÁî£¬ÇÒÊä³öĞÅÏ¢µ½¿ØÖÆÌ¨
+	 * éœ€æ±‚ï¼šæ‰§è¡Œcmdå‘½ä»¤ï¼Œä¸”è¾“å‡ºä¿¡æ¯åˆ°æ§åˆ¶å°
 	 * @param cmd
 	 */
 	public void execCmd(String cmd) {
 		System.out.println("----execCmd:  " + cmd);
 		try {
 			Process p = Runtime.getRuntime().exec(cmd);
-			//ÕıÈ·Êä³öÁ÷
+			//æ­£ç¡®è¾“å‡ºæµ
 			InputStream input = p.getInputStream();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(
 					input));
@@ -178,7 +178,7 @@ public class My_UiAutomatorHelper {
 				System.out.println(line);
                 saveToFile(line, "runlog.log", false);
 			}
-			//´íÎóÊä³öÁ÷
+			//é”™è¯¯è¾“å‡ºæµ
 			InputStream errorInput = p.getErrorStream();
 			BufferedReader errorReader = new BufferedReader(new InputStreamReader(
 					errorInput));
@@ -192,12 +192,12 @@ public class My_UiAutomatorHelper {
 		}
 	}
 	/**
-	 * ĞèÇó£ºĞ´ÈçÄÚÈİµ½Ö¸¶¨µÄÎÄ¼şÖĞ
+	 * éœ€æ±‚ï¼šå†™å¦‚å†…å®¹åˆ°æŒ‡å®šçš„æ–‡ä»¶ä¸­
 	 * 
 	 * @param path
-	 *            ÎÄ¼şµÄÂ·¾¶
+	 *            æ–‡ä»¶çš„è·¯å¾„
 	 * @param content
-	 *            Ğ´ÈëÎÄ¼şµÄÄÚÈİ
+	 *            å†™å…¥æ–‡ä»¶çš„å†…å®¹
 	 */
 	public void writerText(String path, String content) {
 
@@ -208,7 +208,7 @@ public class My_UiAutomatorHelper {
 		}
 
 		try {
-			// new FileWriter(path + "t.txt", true) ÕâÀï¼ÓÈëtrue ¿ÉÒÔ²»¸²¸ÇÔ­ÓĞTXTÎÄ¼şÄÚÈİ ĞøĞ´
+			// new FileWriter(path + "t.txt", true) è¿™é‡ŒåŠ å…¥true å¯ä»¥ä¸è¦†ç›–åŸæœ‰TXTæ–‡ä»¶å†…å®¹ ç»­å†™
 			BufferedWriter bw1 = new BufferedWriter(new FileWriter(path));
 			bw1.write(content);
 			bw1.flush();

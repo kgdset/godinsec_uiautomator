@@ -9967,3 +9967,691 @@ OK (1 test)
 
 
 INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/kgdset/repository/VPT/bin/classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 9 source files to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源�??1.5已过�?, 将在未来�?有发行版中删�?
+    [javac] 警告: [options] 目标�?1.5已过�?, 将在未来�?有发行版中删�?
+    [javac] 警告: [options] 要隐藏有关已过时选项的警�?, 请使�? -Xlint:-options�?
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]         ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]            ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                    ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                       ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                        ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                             ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                               ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:4: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��5�� ����5:08:31 
+    [javac]                                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	         ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	            ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	               ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	                 ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:10: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:����̵꣬���̵�?
+    [javac] 	                   ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                 ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                  ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                   ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                      ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                       ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                        ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                         ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:11: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ���װ������
+    [javac] 	                          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	             ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                 ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                  ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                   ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                    ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:19: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A��������?
+    [javac] 	                      ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                 ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                  ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                      ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                       ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                        ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:20: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�жϡ��򿪡�����
+    [javac] 	                         ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	             ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                 ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                  ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                   ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                    ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:28: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:ѡ��Ӧ��A�������?
+    [javac] 	                      ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                  ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                   ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                      ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                       ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/AppStoreModule.java:29: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Checkpoint:�ж�Ӧ��A����
+    [javac] 	                        ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]         ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]            ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                    ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                     ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                       ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                        ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                            ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                               ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:15: 警告: 编码UTF-8的不可映射字�?
+    [javac] * @date ����ʱ�䣺2016��4��01�� ����5:16:13 
+    [javac]                                 ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	         ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	          ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	           ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	            ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	             ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	              ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	               ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	                ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	                  ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	                    ^
+    [javac] /Users/kgdset/repository/VPT/src/com/godin/virtest/BaseLauncherModule.java:25: 警告: 编码UTF-8的不可映射字�?
+    [javac] 	 * Title:��������ֻ�ͼ�꣬���������ֻ�?
+    [javac] 	                      ^
+    [javac] 100 个警�?
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+705 KB/s (6272 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testOpenStartApp:
+junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 11.893
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/kgdset/repository/VPT/bin/classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 4 source files to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+356 KB/s (5585 bytes in 0.015s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testOpenStartApp:
+junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 11.873
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+550 KB/s (5585 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testOpenStartApp:
+junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 11.912
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] No new compiled code. No need to convert bytecode to dalvik format.
+
+-post-dex:
+
+-jar:
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+685 KB/s (5585 bytes in 0.007s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testOpenStartApp:
+junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:108)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 11.979
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1632 KB/s (5595 bytes in 0.003s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+ok
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 15.182
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
