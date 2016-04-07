@@ -2,8 +2,6 @@ package com.godin.virtest;
 
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
-import com.android.uiautomator.core.UiSelector;
-
 import junit.framework.Assert;
 
 /** 
@@ -12,6 +10,8 @@ import junit.framework.Assert;
 * @version 1.0   
 */
 public class AppStoreModule {
+	Utility uti=new Utility();
+	
 	/**
 	 * Id:1
 	 * Title:点击商店，打开商店
@@ -19,9 +19,9 @@ public class AppStoreModule {
 	 * @throws UiObjectNotFoundException 
 	 */
 	public void testOpenAppStore() throws UiObjectNotFoundException{
-		KillProcessModule.openGLauncher();
-		new UiObject(new UiSelector().text("豌豆荚")).clickAndWaitForNewWindow();
-		UiObject install=new UiObject(new UiSelector().text("安装"));
+		uti.openGLauncher();
+		uti.byText("豌豆荚").clickAndWaitForNewWindow();
+		UiObject install=uti.byText("安装");
 		Assert.assertEquals(true, install.exists());
 	}
 	
@@ -32,8 +32,8 @@ public class AppStoreModule {
 	 * @throws UiObjectNotFoundException 
 	 */
 	public void testInstallApp() throws UiObjectNotFoundException{
-		new UiObject(new UiSelector().text("安装")).click();
-		UiObject openApp=new UiObject(new UiSelector().text("打开"));
+		uti.byText("安装").click();
+		UiObject openApp=uti.byText("打开");
 		Assert.assertEquals(true, openApp.exists());
 	}
 	
@@ -43,6 +43,10 @@ public class AppStoreModule {
 	 * Checkpoint:判断应用A启动
 	 */
 	public void testAppInstalledSuccessfully(){
-		
+		try {
+			uti.byText("打开").clickAndWaitForNewWindow();
+		} catch (UiObjectNotFoundException e) {
+			e.printStackTrace();
+		}	
 	}
 }

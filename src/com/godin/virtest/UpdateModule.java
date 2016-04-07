@@ -2,7 +2,6 @@ package com.godin.virtest;
 
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
-import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 import junit.framework.Assert;
@@ -13,6 +12,8 @@ import junit.framework.Assert;
 * @version 1.0 
 */
 public class UpdateModule extends UiAutomatorTestCase{
+	Utility uti=new Utility();
+	
 	/**
 	 * Id:1
 	 * Title:点击版本更新，打开版本页面
@@ -20,10 +21,10 @@ public class UpdateModule extends UiAutomatorTestCase{
 	 * @throws UiObjectNotFoundException 
 	 */
 	public void testOpenVersionPage() throws UiObjectNotFoundException{
-		KillProcessModule.openGLauncher();
-		KillProcessModule.openSettings();
-		new UiObject(new UiSelector().text("版本更新")).clickAndWaitForNewWindow();
-		UiObject virtualPhone=new UiObject(new UiSelector().text("G虚拟手机"));
+		uti.openGLauncher();
+		uti.openSettings();
+		uti.byText("版本更新").clickAndWaitForNewWindow();
+		UiObject virtualPhone=uti.byText("G虚拟手机");
 		Assert.assertEquals(true, virtualPhone.exists());
 	}
 	
