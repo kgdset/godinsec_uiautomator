@@ -3,8 +3,8 @@ package com.godin.virtest;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
-import com.android.uiautomator.core.UiScrollable;
 import com.android.uiautomator.core.UiSelector;
+import com.uiautomator.myjar.MyUiScrollable;
 
 import android.os.RemoteException;
 
@@ -42,7 +42,7 @@ public class Utility {
 		return new UiObject(new UiSelector().instance(instance));
 	}
 
-	public void openGLauncher() throws UiObjectNotFoundException {
+	 public void openGLauncher() throws UiObjectNotFoundException {
 		UiDevice device = UiDevice.getInstance();
 		try {
 			device.wakeUp();
@@ -54,15 +54,9 @@ public class Utility {
 		UiObject obj = new UiObject(new UiSelector().resourceId("com.android.launcher3:id/hotseat"));
 		UiObject appbtn = obj.getChild(new UiSelector().className("android.widget.TextView").index(2));
 		appbtn.clickAndWaitForNewWindow();
-		UiScrollable collectionObject = new UiScrollable(new UiSelector().scrollable(true));
-
-		if (collectionObject.exists()) {
-			// collectionObject.scrollForward();
-			collectionObject.setAsHorizontalList();
-			UiObject scrollableObject = byDescription("GLauncher");
-			collectionObject.scrollIntoView(scrollableObject);
-			scrollableObject.clickAndWaitForNewWindow();
-		}
+		UiObject scrollableObject = new MyUiScrollable().byDescription("GLauncher");
+		scrollableObject.clickAndWaitForNewWindow();
+		
 	}
 
 	public void openSettings(){
