@@ -14,6 +14,7 @@ import android.os.RemoteException;
  * @version 1.0
  */
 public class Utility {
+	
 	public UiObject byText(String text) {
 		return new UiObject(new UiSelector().textMatches(text));
 	}
@@ -40,6 +41,18 @@ public class Utility {
 
 	public UiObject byInstance(int instance) {
 		return new UiObject(new UiSelector().instance(instance));
+	}
+	
+	public void sleep(int s){
+		try {
+			Thread.sleep(s*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void exitApp(){
+		
 	}
 
 	public void openGLauncher() throws UiObjectNotFoundException {
@@ -73,4 +86,6 @@ public class Utility {
 			e.printStackTrace();
 		}
 	}
+	
+	
 }
