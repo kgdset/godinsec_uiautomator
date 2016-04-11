@@ -5,7 +5,11 @@ import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiSelector;
-
+/**
+ * @author wubin
+ * @date 创建时间：2016年4月07日 下午5:16:13
+ * @version 1.0
+ */
 public class MyUtility {
 
 	public void Ready() throws RemoteException

@@ -61,9 +61,28 @@ public class ThirdPartyAppModule extends UiAutomatorTestCase {
 
 	/**
 	 * Id:3 Title:长按桌面图标，拖动到删除区域，可以删除应用 Checkpoint:判断应用图标在桌面上不存在
+	 * @throws UiObjectNotFoundException 
+	 * @throws RemoteException 
 	 */
-	public void testDellThirdPartyApp() {
+	public void testDellThirdPartyApp() throws RemoteException, UiObjectNotFoundException {
+		new MyGodinCustom().openGLauncher();
+		MyUiScrollable scr=new MyUiScrollable(new MyUiSelector().scrollable(false));
+		scr.setAsHorizontalList();
+		scr.flingForward();
+		UiObject grid = new MyUiSelector()
+				.byResourceId("com.godinsec.glauncher:id/dragGridView");
 
+		UiObject appicon = grid.getChild(new MyUiSelector().resourceId(
+				"com.godinsec.glauncher:id/item_text"));
+		String appname = appicon.getText();
+		// appicon.longClick();
+		// appicon.dragTo(uninstall, 200);
+		appicon.dragTo(566, 136, 300);
+		new MyUiSelector().byText("确定").click();
+		// appicon.longClick();
+		UiObject oldapp = new MyUiScrollable().byText(appname);
+		assertEquals(false, oldapp.exists());
 	}
+	
 
 }

@@ -1,12 +1,12 @@
 package com.godin.virtest;
 
-import junit.framework.Assert;
 import android.os.RemoteException;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 import com.uiautomator.myjar.MyGodinCustom;
 import com.uiautomator.myjar.MyUiScrollable;
+import com.uiautomator.myjar.MyUiSelector;
 
 /**
  * @author wubin
@@ -70,16 +70,28 @@ public class BaseLauncherModule extends UiAutomatorTestCase {
 
 	/**
 	 * Id:5 Title:长按桌面图标，拖动到删除区域，可以删除应用 Checkpoint:判断应用图标在桌面上不存在
+	 * @throws UiObjectNotFoundException 
+	 * @throws RemoteException 
 	 */
-	public void testDellApp() {
+	public void testDellApp() throws UiObjectNotFoundException, RemoteException {
+		new MyGodinCustom().openGLauncher();
+		MyUiScrollable scr=new MyUiScrollable(new MyUiSelector().scrollable(false));
+		scr.setAsHorizontalList();
+		scr.flingForward();
+		UiObject grid = new MyUiSelector()
+				.byResourceId("com.godinsec.glauncher:id/dragGridView");
 
+		UiObject appicon = grid.getChild(new MyUiSelector().resourceId(
+				"com.godinsec.glauncher:id/item_text"));
+		String appname = appicon.getText();
+		// appicon.longClick();
+		// appicon.dragTo(uninstall, 200);
+		appicon.dragTo(566, 136, 300);
+		new MyUiSelector().byText("确定").click();
+		// appicon.longClick();
+		UiObject oldapp = new MyUiScrollable().byText(appname);
+		assertEquals(false, oldapp.exists());
 	}
 
-	/**
-	 * Id:6 Title:点击下载完成，开始安装 Checkpoint:判断“安装”存在
-	 */
-	public void testStartInstallation() {
-
-	}
 
 }

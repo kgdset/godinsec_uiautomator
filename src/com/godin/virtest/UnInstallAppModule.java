@@ -16,6 +16,7 @@ import com.uiautomator.myjar.MyUiSelector;
  */
 public class UnInstallAppModule extends UiAutomatorTestCase {
 
+MyGodinCustom mygodin=	new MyGodinCustom();
 	public static void main(String[] args) {
 		new My_UiAutomatorHelper("UnInstallAppModule",
 				"com.godin.virtest.UnInstallAppModule", "testUnInstallApp", "1");
@@ -29,7 +30,7 @@ public class UnInstallAppModule extends UiAutomatorTestCase {
 	 */
 	public void testUnInstallApp() throws UiObjectNotFoundException, RemoteException {
 		
-		new MyGodinCustom().openGLauncher();
+		mygodin.openGLauncher();
 		MyUiScrollable scr=new MyUiScrollable(new MyUiSelector().scrollable(false));
 		scr.setAsHorizontalList();
 		scr.flingForward();
@@ -50,9 +51,11 @@ public class UnInstallAppModule extends UiAutomatorTestCase {
 
 	/**
 	 * Id:2 Title:在应用管理中，卸载第三方应用 Checkpoint:判断应用在桌面不存在，判断应用在应用管理中不存在
+	 * @throws UiObjectNotFoundException 
+	 * @throws RemoteException 
 	 */
-	public void testOpenStartThirdPartyApp() {
-
+	public void testOpenStartThirdPartyApp() throws RemoteException, UiObjectNotFoundException {
+mygodin.openAppManage();
 	}
 
 }

@@ -4,12 +4,11 @@ import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiScrollable;
 import com.android.uiautomator.core.UiSelector;
-
 /**
  * 封装UiScrollable，可滚动控件中查找元素
- * 
- * @author kgdset
- * 
+ * @author wubin
+ * @date 创建时间：2016年4月07日 下午5:16:13
+ * @version 1.0
  */
 public class MyUiScrollable extends UiScrollable{
 

@@ -2,7 +2,11 @@ package com.uiautomator.myjar;
 
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiSelector;
-
+/**
+ * @author wubin
+ * @date 创建时间：2016年4月07日 下午5:16:13
+ * @version 1.0
+ */
 public class MyUiSelector extends UiSelector {
 	public UiObject byText(String text) {
 
