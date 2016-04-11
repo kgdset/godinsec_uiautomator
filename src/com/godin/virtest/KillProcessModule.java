@@ -1,5 +1,6 @@
 package com.godin.virtest;
 
+import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 
@@ -21,18 +22,29 @@ public class KillProcessModule {
 	 */
 	public void testOpenAppManager() throws UiObjectNotFoundException{
 		uti.openGLauncher();
+		uti.byText("豌豆荚").clickAndWaitForNewWindow();
+		uti.sleep(3);
+		UiDevice.getInstance().pressHome();
 		uti.openSettings();
 		uti.byText("应用管理").clickAndWaitForNewWindow();
 		UiObject killProcess=uti.byResourceId("com.godinsec.glauncher:id/settings_app_manage_item_kill");
 		Assert.assertEquals(true, killProcess.exists());	
+		uti.exitApp();
 	}
 	
 	/**
 	 * Id:2
 	 * Title:点击杀死应用进程
 	 * Checkpoint:判断“杀死进程”不存在
+	 * @throws UiObjectNotFoundException 
 	 */
-	public void testKillOneProcess() {
+	public void testKillOneProcess() throws UiObjectNotFoundException {
+		uti.openGLauncher();
+		uti.byText("豌豆荚").clickAndWaitForNewWindow();
+		uti.sleep(3);
+		UiDevice.getInstance().pressHome();
+		uti.openSettings();
+		uti.byText("应用管理").clickAndWaitForNewWindow();
 		UiObject killProcess = uti.byResourceId("com.godinsec.glauncher:id/settings_app_manage_item_kill");
 		while (killProcess.exists()) {
 			try {

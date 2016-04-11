@@ -22,7 +22,9 @@ public class AppStoreModule {
 		uti.openGLauncher();
 		uti.byText("豌豆荚").clickAndWaitForNewWindow();
 		UiObject install=uti.byText("安装");
+		uti.sleep(30);
 		Assert.assertEquals(true, install.exists());
+		uti.exitApp();
 	}
 	
 	/**
@@ -32,9 +34,13 @@ public class AppStoreModule {
 	 * @throws UiObjectNotFoundException 
 	 */
 	public void testInstallApp() throws UiObjectNotFoundException{
+		uti.openGLauncher();
+		uti.byText("豌豆荚").clickAndWaitForNewWindow();
 		uti.byText("安装").click();
+		uti.sleep(30);
 		UiObject openApp=uti.byText("打开");
 		Assert.assertEquals(true, openApp.exists());
+		uti.exitApp();
 	}
 	
 	/**
@@ -44,7 +50,14 @@ public class AppStoreModule {
 	 */
 	public void testAppInstalledSuccessfully(){
 		try {
+			uti.openGLauncher();
+			uti.byText("豌豆荚").clickAndWaitForNewWindow();
+			uti.byText("安装").click();
+			uti.sleep(30);
 			uti.byText("打开").clickAndWaitForNewWindow();
+			UiObject openApp=uti.byText("打开");
+			Assert.assertEquals(false, openApp.exists());
+			uti.exitApp();
 		} catch (UiObjectNotFoundException e) {
 			e.printStackTrace();
 		}	

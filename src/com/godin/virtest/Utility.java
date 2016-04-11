@@ -52,7 +52,15 @@ public class Utility {
 	}
 	
 	public void exitApp(){
-		
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		sleep(1);
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		sleep(1);
+		UiDevice.getInstance().pressHome();
 	}
 
 	 public void openGLauncher() throws UiObjectNotFoundException {

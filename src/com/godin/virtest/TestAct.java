@@ -4,8 +4,9 @@ import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class TestAct extends UiAutomatorTestCase{
-	/*
-	 * 这是第1条用例
+	
+	/**
+	 * @see 这是第1条用例
 	 * 
 	 * 
 	 */
@@ -13,7 +14,8 @@ public class TestAct extends UiAutomatorTestCase{
 		UiDevice.getInstance().wakeUp();
 	}
 	
-	/*
+	/**
+	 * @see 这是第2条用例
 	 * 这是第2条用例
 	 */
 	
@@ -21,7 +23,3 @@ public class TestAct extends UiAutomatorTestCase{
 		UiDevice.getInstance().pressHome();
 	}	
 }
-
-
-
-
