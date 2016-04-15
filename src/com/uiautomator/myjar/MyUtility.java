@@ -22,7 +22,7 @@ public class MyUtility {
 	
 	 public void openAppBytext(String appname) throws RemoteException, UiObjectNotFoundException{
 			Ready();
-			UiObject obj = new MyUiSelector().byResourceId("com.android.launcher3:id/hotseat");
+			UiObject obj = new MyUiSelector().byResourceId("com.google.android.googlequicksearchbox:id/hotseat");
 			UiObject appbtn = obj.getChild(new MyUiSelector().className("android.widget.TextView").index(2));
 			appbtn.clickAndWaitForNewWindow();
 			UiObject scrollableObject = new MyUiScrollable().byText(appname);
