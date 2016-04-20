@@ -16570,3 +16570,623 @@ OK (1 test)
 
 
 INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 4 source files to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found new input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+908 KB/s (10041 bytes in 0.010s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Error in testOpenStartApp:
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT_REGEX=跳过]
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:432)
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:410)
+	at com.uiautomator.myjar.MyGodinCustom.openWdj(MyGodinCustom.java:31)
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:49)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT_REGEX=跳过]
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:432)
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:410)
+	at com.uiautomator.myjar.MyGodinCustom.openWdj(MyGodinCustom.java:31)
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:49)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -1
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.E
+Time: 45.145
+
+FAILURES!!!
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+992 KB/s (10009 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 33.499
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+2987 KB/s (10026 bytes in 0.003s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Error in testOpenStartApp:
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT_REGEX=跳过]
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:432)
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:410)
+	at com.uiautomator.myjar.MyGodinCustom.openWdj(MyGodinCustom.java:34)
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:49)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT_REGEX=跳过]
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:432)
+	at com.android.uiautomator.core.UiObject.clickAndWaitForNewWindow(UiObject.java:410)
+	at com.uiautomator.myjar.MyGodinCustom.openWdj(MyGodinCustom.java:34)
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:49)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -1
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.E
+Time: 40.397
+
+FAILURES!!!
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+914 KB/s (10007 bytes in 0.010s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testOpenStartApp:
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:53)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:53)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 41.666
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found new input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+984 KB/s (10412 bytes in 0.010s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 33.695
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+3415 KB/s (10347 bytes in 0.002s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 19.79
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1175 KB/s (10374 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+Failure in testOpenStartApp:
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:53)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at com.godin.virtest.BaseLauncherModule.testOpenStartApp(BaseLauncherModule.java:53)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.F
+Time: 39.911
+
+FAILURES!!!
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1013 KB/s (10353 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testOpenStartApp
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 30.847
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1

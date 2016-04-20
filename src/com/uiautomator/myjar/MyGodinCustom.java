@@ -29,6 +29,7 @@ public class MyGodinCustom extends UiAutomatorTestCase {
 		while (obj.waitForExists(10000)) {
 			obj.clickAndWaitForNewWindow();
 		}
+		
 	}
 
 	public void openSettings() throws UiObjectNotFoundException,
