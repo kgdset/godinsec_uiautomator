@@ -16504,3 +16504,69 @@ Tests run: 1,  Failures: 0,  Errors: 1
 
 
 INSTRUMENTATION_STATUS_CODE: -1
+Updated file /Users/kgdset/repository/VPT/build.xml
+Buildfile: /Users/kgdset/repository/VPT/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.5
+ [checkenv] Installed at /Users/kgdset/Documents/adt-bundle-mac-x86_64-20140702/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for BaseLauncherModule...
+[getuitarget] Project Target:   Android 5.0
+[getuitarget] API level:        21
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/kgdset/repository/VPT/bin/classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 15 source files to /Users/kgdset/repository/VPT/bin/classes
+    [javac] 警告: [options] 源值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 目标值1.5已过时, 将在未来所有发行版中删除
+    [javac] 警告: [options] 要隐藏有关已过时选项的警告, 请使用 -Xlint:-options。
+    [javac] 3 个警告
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/kgdset/repository/VPT/bin/classes
+      [dex] Converting compiled files and external libraries into /Users/kgdset/repository/VPT/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/kgdset/repository/VPT/bin/BaseLauncherModule.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1192 KB/s (9098 bytes in 0.007s)
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.godin.virtest.BaseLauncherModule:
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testStartVirtualPhone
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+INSTRUMENTATION_STATUS: test=testStartVirtualPhone
+INSTRUMENTATION_STATUS: class=com.godin.virtest.BaseLauncherModule
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: stream=
+Test results for WatcherResultPrinter=.
+Time: 17.805
+
+OK (1 test)
+
+
+INSTRUMENTATION_STATUS_CODE: -1

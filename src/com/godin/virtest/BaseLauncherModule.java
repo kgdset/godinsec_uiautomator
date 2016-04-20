@@ -16,7 +16,7 @@ import com.uiautomator.myjar.MyUiSelector;
 public class BaseLauncherModule extends UiAutomatorTestCase {
 	public static void main(String[] args) {
 		new My_UiAutomatorHelper("BaseLauncherModule",
-				"com.godin.virtest.BaseLauncherModule", "testOpenStartApp", "1");
+				"com.godin.virtest.BaseLauncherModule", "testStartVirtualPhone", "1");
 	}
 
 	/**

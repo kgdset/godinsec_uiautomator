@@ -14,7 +14,7 @@ public class MyGodinCustom extends UiAutomatorTestCase {
 	public void openGLauncher() throws UiObjectNotFoundException,
 			RemoteException {
 
-		new MyUtility().openAppBytext("GLauncher");
+		new MyUtility().openAppBytext("虚拟手机");
 		UiObject obj = new MyUiSelector().byText("马上开始");
 		sleep(10000);
 		while (obj.exists()) {
