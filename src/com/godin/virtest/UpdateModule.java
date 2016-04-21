@@ -3,6 +3,7 @@ package com.godin.virtest;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.uiautomator.myjar.Utility;
 
 import junit.framework.Assert;
 

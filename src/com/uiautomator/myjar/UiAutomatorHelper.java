@@ -1,4 +1,4 @@
-package com.godin.virtest;
+package com.uiautomator.myjar;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

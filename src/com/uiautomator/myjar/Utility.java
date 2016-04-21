@@ -1,10 +1,9 @@
-package com.godin.virtest;
+package com.uiautomator.myjar;
 
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiSelector;
-import com.uiautomator.myjar.MyUiScrollable;
 
 import android.os.RemoteException;
 

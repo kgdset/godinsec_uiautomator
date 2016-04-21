@@ -8,6 +8,7 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 import com.uiautomator.myjar.MyGodinCustom;
 import com.uiautomator.myjar.MyUiScrollable;
 import com.uiautomator.myjar.MyUiSelector;
+import com.uiautomator.myjar.My_UiAutomatorHelper;
 
 /**
  * @author wubin
