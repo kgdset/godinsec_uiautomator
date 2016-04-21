@@ -1,9 +1,12 @@
 package com.godin.virtest;
 
+import android.os.RemoteException;
+
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
-import com.uiautomator.myjar.Utility;
+import com.uiautomator.myjar.MyGodinCustom;
+import com.uiautomator.myjar.MyUiScrollable;
 
 import junit.framework.Assert;
 
@@ -13,22 +16,22 @@ import junit.framework.Assert;
 * @version 1.0 
 */
 public class KillProcessModule {
-	Utility uti=new Utility();
+	MyGodinCustom uti=new MyGodinCustom();
 	
 	/**
 	 * Id:1
 	 * Title:点击应用管理，打开应用管理页面
 	 * Checkpoint:判断“杀死进程”存在
 	 * @throws UiObjectNotFoundException 
+	 * @throws RemoteException 
 	 */
-	public void testOpenAppManager() throws UiObjectNotFoundException{
+	public void testOpenAppManager() throws UiObjectNotFoundException, RemoteException{
 		uti.openGLauncher();
-		uti.byText("豌豆荚").clickAndWaitForNewWindow();
-		uti.sleep(3);
+		uti.openWdj();
 		UiDevice.getInstance().pressHome();
 		uti.openSettings();
-		uti.byText("应用管理").clickAndWaitForNewWindow();
-		UiObject killProcess=uti.byResourceId("com.godinsec.glauncher:id/settings_app_manage_item_kill");
+		uti.openAppManage();
+		UiObject killProcess=new MyUiScrollable().byResourceId("com.godinsec.glauncher:id/settings_app_manage_item_kill");
 		Assert.assertEquals(true, killProcess.exists());	
 		uti.exitApp();
 	}
@@ -38,15 +41,15 @@ public class KillProcessModule {
 	 * Title:点击杀死应用进程
 	 * Checkpoint:判断“杀死进程”不存在
 	 * @throws UiObjectNotFoundException 
+	 * @throws RemoteException 
 	 */
-	public void testKillOneProcess() throws UiObjectNotFoundException {
+	public void testKillOneProcess() throws UiObjectNotFoundException, RemoteException {
 		uti.openGLauncher();
-		uti.byText("豌豆荚").clickAndWaitForNewWindow();
-		uti.sleep(3);
+		uti.openWdj();
 		UiDevice.getInstance().pressHome();
 		uti.openSettings();
-		uti.byText("应用管理").clickAndWaitForNewWindow();
-		UiObject killProcess = uti.byResourceId("com.godinsec.glauncher:id/settings_app_manage_item_kill");
+		uti.openAppManage();
+		UiObject killProcess = new MyUiScrollable().byResourceId("com.godinsec.glauncher:id/settings_app_manage_item_kill");
 		while (killProcess.exists()) {
 			try {
 				killProcess.click();

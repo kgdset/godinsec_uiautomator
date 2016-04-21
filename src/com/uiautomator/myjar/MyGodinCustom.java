@@ -1,6 +1,8 @@
 package com.uiautomator.myjar;
 
 import android.os.RemoteException;
+
+import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
@@ -36,9 +38,6 @@ public class MyGodinCustom extends UiAutomatorTestCase {
 			RemoteException {
 		new MyUiScrollable().byText("设置").clickAndWaitForNewWindow();
 
-		UiObject obj = new MyUiSelector().byText("跳过");
-
-		obj.clickAndWaitForNewWindow();
 
 	}
 	public void openAppManage() throws RemoteException, UiObjectNotFoundException
@@ -47,5 +46,25 @@ public class MyGodinCustom extends UiAutomatorTestCase {
 		UiObject obj=new MyUiScrollable().byText("应用管理");
 		obj.clickAndWaitForNewWindow();
 		
+	}
+	
+	public void sleep(int s){
+		try {
+			Thread.sleep(s*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void exitApp(){
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		sleep(1);
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		sleep(1);
+		UiDevice.getInstance().pressHome();
 	}
 }

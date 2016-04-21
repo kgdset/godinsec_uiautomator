@@ -66,4 +66,24 @@ public class MyUtility {
 			e.printStackTrace();
 		}
 	}
+	
+	public void sleep(int s){
+		try {
+			Thread.sleep(s*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void exitApp(){
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		sleep(1);
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		UiDevice.getInstance().pressBack();
+		sleep(1);
+		UiDevice.getInstance().pressHome();
+	}
 }
